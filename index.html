@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <style>
+      body { background: #0f172a; }
+    </style>
+  </head>
+  <body class="text-slate-100">
+
+    <!-- ヘッダー -->
+    <header class="min-h-[70vh] flex flex-col items-center justify-center text-center px-4 bg-gradient-to-b from-indigo-950 via-slate-900 to-slate-950">
+      <p class="uppercase tracking-[0.3em] text-sm text-indigo-300 mb-4">Frontend Engineer</p>
+      <h1 class="text-5xl sm:text-6xl font-black mb-4">Sayaka Yano</h1>
+      <p class="text-lg text-slate-300 max-w-md">"プログラミングで人を笑顔に" &mdash; あだ名はYappy。食べることが大好きなポッセ生です。</p>
+      <a href="#about" class="mt-8 inline-block bg-indigo-500 hover:bg-indigo-400 text-white font-bold px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+        もっと見る ↓
+      </a>
+    </header>
+
+    <!-- 自己紹介 -->
+    <section id="about" class="max-w-3xl mx-auto px-6 py-20">
+      <h2 class="text-3xl font-bold mb-6 border-l-4 border-indigo-400 pl-4">自己紹介</h2>
+      <p class="text-slate-300 leading-relaxed">
+        プログラミングスクールでフロントエンド基礎を学習中のYappyです。「こんなアプリがあったらいいなあ」と想像するのが好きで、そこから「自分の手で作ってみたい」と思いPOSSEに入りました。
+        HTML/CSSから始めて、今はJavaScriptとTailwind CSSを使って、ちょっとした動きのあるUIを作るのが楽しくなってきたところです。
+        将来はユーザーのニーズに合った、すっきりしていておしゃれなアプリを作れるようになりたいです！      </p>
+    </section>
+
+    <!-- スキルリスト -->
+    <section class="max-w-3xl mx-auto px-6 py-20">
+      <h2 class="text-3xl font-bold mb-8 border-l-4 border-indigo-400 pl-4">スキル</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <div class="bg-slate-800 rounded-xl p-5 text-center transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:bg-slate-700">
+          <p class="font-bold">HTML</p>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-5 text-center transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:bg-slate-700">
+          <p class="font-bold">CSS</p>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-5 text-center transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:bg-slate-700">
+          <p class="font-bold">Tailwind CSS</p>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-5 text-center transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:bg-slate-700">
+          <p class="font-bold">JavaScript</p>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-5 text-center transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:bg-slate-700">
+          <p class="font-bold">Git / GitHub</p>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-5 text-center transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:bg-slate-700">
+          <p class="font-bold">Fetch API</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 作品スライダー -->
+    <section class="max-w-3xl mx-auto px-6 py-20">
+      <h2 class="text-3xl font-bold mb-8 border-l-4 border-indigo-400 pl-4">作品</h2>
+      <div class="splide" aria-label="作品スライダー">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="rounded-xl p-10 h-56 flex flex-col justify-end bg-indigo-600 transition-all duration-300 hover:scale-[1.02]">
+                <p class="text-xl font-bold">ユーザー登録フォーム</p>
+                <p class="text-sm text-slate-200">入力チェック付きのサインアップUI</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="rounded-xl p-10 h-56 flex flex-col justify-end bg-sky-600 transition-all duration-300 hover:scale-[1.02]">
+                <p class="text-xl font-bold">GitHub ユーザー検索</p>
+                <p class="text-sm text-slate-200">API連携の練習アプリ</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="rounded-xl p-10 h-56 flex flex-col justify-end bg-amber-600 transition-all duration-300 hover:scale-[1.02]">
+                <p class="text-xl font-bold">ポートフォリオサイト</p>
+                <p class="text-sm text-slate-200">このページ自体も作品のひとつ</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-slate-950 py-10 text-center text-slate-400 text-sm">
+      <p>&copy; 2026 Sayaka Yano. Built with Tailwind CSS &amp; Splide.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        new Splide(".splide", {
+          type: "loop",
+          perPage: 1,
+          gap: "1rem",
+          autoplay: true,
+          interval: 3500,
+        }).mount();
+      });
+    </script>
+  </body>
+</html>
